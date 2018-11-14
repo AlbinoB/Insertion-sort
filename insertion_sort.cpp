@@ -59,6 +59,22 @@ int main()
 		}
 
 void insertionsort(int *arr,int arrsize){
+    int temp,to_be_inserted,j;
+		for(int i=1;i<arrsize;i++)
+        {
+            cout<<"pass "<<i<<"=>";
+            to_be_inserted=arr[i];
+            j=i;
+            while(to_be_inserted<arr[j-1]&&j>0)
+            {
+                arr[j]=arr[j-1];
+                j--;
+            }
+            arr[j]=to_be_inserted;
+            display(arr,arrsize);
+            cout<<"\n";
+        }
+
 
 
 }
